@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Chacmetal</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+
+<body class="color-de-texto background-fondo">
+	<div class="header background-color">
+		<div class="menu-wrapper menu-container menu-button-container">
+			<div class="menu-container">
+				<div class="button-container"><%= link_to"principal", chacmetals_path%></div>
+				<div class="button-container"><%= link_to"tienda", tienda_path%></div>
+				<div class="button-container"><%= link_to"eventos", eventos_path%></div>
+				<div class="button-container"><%= link_to"galleria", galeria_path%></div>
+		    <div class="clearfix"></div>
+		  </div>  
+		</div>
+
+		<%= image_tag "chaclogo.jpg", class: "image-size" %>
+	</div>
+		
+	<div class="container chacmetal-container">
+	  <%= yield %>
+  </div>
+	
+
+	<div class="footer background-color color-de-texto chacmetal-container container">
+		<div>
+		<%= image_tag "logo_face.png", class: "facebook" %>
+		<%= image_tag "Twitter_logo_blue.png", class: "twitter image-size" %>
+	aqui el footer para la redes sociales y contacto, mas otros datos
+	  </div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,4 @@
+class ChacmetalsController < ApplicationController
+  def pricipal
+  end
+end

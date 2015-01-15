@@ -1,0 +1,97 @@
+.image-size{
+  height: 65px;
+  width: 65px;
+}
+
+.background-fondo{
+  background-image: url('fondo.jpg');
+  background-repeat: repeat;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  height: 25%;  
+  width: 100%;
+}
+
+.color-de-texto{
+  color:white;
+}
+
+.background-color{
+ background-color:black;
+}
+
+.slider{
+  height: 500px;
+  width: 100%;
+}
+
+.body {
+  height: 60%;
+  width: 100%;
+}
+
+.footer {
+  height:100px;
+  width: 100%;
+}
+
+
+
+.menu-wrapper{
+  background-color:red;
+}
+
+ .menu-container{
+  display:inline-block;
+  float:right;
+  padding:5px;
+}
+  
+.button-container{
+  display:inline-block; 
+}
+
+.button-container a{
+  display:inline-block;
+  color:white;
+  background-color:red;
+  text-decoration:none;
+  padding:5px;
+}
+
+.button-container a:hover{
+  background-color:#9C0000; 
+}
+
+  .clearfix:after {content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+  .clearfix {display: inline-block;}
+  /* Hides from IE-mac \*/
+  * html .clearfix {height: 1%;}
+  .clearfix {display: block;}
+  /* End hide from IE-mac */
+
+
+.chacmetal-carrousel .item img{
+  margin: 0 auto;
+}
+
+.chacmetal-container{
+  width:80%;
+  padding: 0;
+}
+
+.sin-margen{
+  margin: 0;
+  padding: 0;
+}
+
+.centrado{
+  text-align: center;
+}
+
