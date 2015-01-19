@@ -9,43 +9,45 @@
 </head>
 
 <body class="color-de-texto background-fondo">
-	<div class="header background-color">
-		<div class="menu-wrapper menu-container menu-button-container">
-			<div class="menu-container">
-				<div class="button-container"><%= link_to"principal", chacmetals_path%></div>
-				<div class="button-container"><%= link_to"tienda", tienda_path%></div>
-				<div class="button-container"><%= link_to"eventos", eventos_path%></div>
-				<div class="button-container"><%= link_to"galleria", galeria_path%></div>
-		    <div class="clearfix"></div>
-		  </div>  
+	<div id="main-container" >
+		<div class="header background-color">
+			<div class="menu-wrapper menu-container menu-button-container">
+				<div class="menu-container">
+					<div class="button-container"><%= link_to"principal", chacmetals_path%></div>
+					<div class="button-container"><%= link_to"tienda", tienda_path%></div>
+					<div class="button-container"><%= link_to"eventos", eventos_path%></div>
+					<div class="button-container"><%= link_to"galleria", galeria_path%></div>
+			    <div class="clearfix"></div>
+			  </div>  
+			</div>
+
+			<%= image_tag "chaclogo.jpg", class: "image-size" %>
 		</div>
-
-		<%= image_tag "chaclogo.jpg", class: "image-size" %>
-	</div>
-		
-	<div class="container chacmetal-container">
-	  <%= yield %>
-	  
-  </div>
-	
-
-	<div class="footer background-color color-de-texto chacmetal-container container">
-		<div class= "container">
-		
-		 <a href="https://www.facebook.com/chacmetal.prods?fref=ts">
-      <%= image_tag "logo_face.png", class: "facebook" %>
-  
-     </a>
-		
-		 <a href="https://www.youtube.com/channel/UC1B4Qg_bUcSKvzBpCs4PZYg">
-      <%= image_tag "YouTube.png", class: "youtube image-size" %>
-     </a>
-
-		 <a href="https://twitter.com/chacmetal90">
-      <%= image_tag "twitt.png", class: "twitter image-size" %>
-     </a>
-
+			
+		<div class="chacmetal-container yield-container	">
+		  <%= yield %>
+		  
 	  </div>
-	</div>
+		
+
+		<div class="footer background-color color-de-texto chacmetal-container">
+			<div class= "container">
+			
+			 <a href="https://www.facebook.com/chacmetal.prods?fref=ts">
+	      <%= image_tag "logo_face.png", class: "facebook" %>
+	  
+	     </a>
+			
+			 <a href="https://www.youtube.com/channel/UC1B4Qg_bUcSKvzBpCs4PZYg">
+	      <%= image_tag "YouTube.png", class: "youtube image-size" %>
+	     </a>
+
+			 <a href="https://twitter.com/chacmetal90">
+	      <%= image_tag "twitt.png", class: "twitter image-size" %>
+	     </a>
+
+		  </div>
+		</div>
+	</div >
 </body>
 </html>
